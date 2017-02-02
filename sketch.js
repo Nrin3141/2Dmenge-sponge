@@ -1,5 +1,5 @@
 var len;
-
+var x = 255;
 function setup() {
   var canvas = createCanvas(800, 800);
   }
@@ -10,9 +10,9 @@ function setup() {
     branch(width);
     }
 function branch(len) {
-    fill(random(255));
+    fill(random(255), random(255), random(255));
     rect(0, 0, len, len);
     if (len > 1) {
-      branch(len * 0.5);
+      branch(len * 0.99);
   }
 }
